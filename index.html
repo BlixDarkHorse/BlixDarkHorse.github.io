@@ -14,321 +14,398 @@
 
 </🛸>
 
-</🌹></🐛🦇><body style="background-image: url('https://ragnarokmedia.blob.core.windows.net/universobdhme/3.png?sp=r&st=2026-03-22T03:03:50Z&se=2036-03-22T11:18:50Z&sv=2024-11-04&sr=b&sig=sdlRsaKhyUNSEiFaJjp99KMMtZO6plknmVlMdcsew9w%3D'); background-size: cover; background-position: Center;">
-    <style>
-        /* --- Mejoras de CSS Solicitadas --- */
-        * {
-            box-sizing: border-box; /* Mejora el modelo de caja para consistencia */
-            margin: 0;
-            padding: 0;
-        }
+</🌹></🐛🦇><body style="background-image: url('https://github.com/BlixDarkHorse/BlixDarkHorse.github.io/blob/main/3.png?raw=true'); background-size: cover; background-position: initial;">
 
-        html {
-            scroll-behavior: smooth; /* Desplazamiento suave para los anclas del nav */
-        }
 
-        /* Animación de brillo para el título principal */
-        @keyframes glow {
-            0%, 100% {
-                text-shadow: 0 0 10px #FFD700, 0 0 20px #FFD700, 0 0 30px #FF00FF;
-            }
-            50% {
-                text-shadow: 0 0 20px #FFD700, 0 0 30px #FF00FF, 0 0 40px #FF00FF;
-            }
-        }
+<input type="radio" name="nav-control" id="show-home" checked hidden>
+<input type="radio" name="nav-control" id="show-features" hidden>
+<input type="radio" name="nav-control" id="show-download" hidden>
+<input type="radio" name="nav-control" id="show-ecosystem" hidden>
 
-        /* Animación de pulso para el ícono de chat */
-        @keyframes pulse {
-            0%, 100% {
-                transform: scale(1);
-                box-shadow: 0 0 15px rgba(255, 0, 255, 0.7);
-            }
-            50% {
-                transform: scale(1.08);
-                box-shadow: 0 0 25px rgba(255, 0, 255, 1);
-            }
-        }
-            {    
-            text-align: center;
-            color: gold;
-            font-family: 'Old English Text MT', serif; /* Mejora: Añadido 'serif' como fallback */
-        }
+<style>
+    /* RESET */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
 
-        .container { width: 90%; max-width: 1200px; margin: 0 auto; padding: 20px; }
-        .text-gold { color: #FFD700; }
-        .text-electric-pink { color: #FF00FF; }
-        .border-electric-pink { border-color: #FF00FF; }
-        .bg-electric-pink { background-color: #FF00FF; }
-        .text-royal-blue { color: #4169E1; }
-        .font-old-english { font-family: 'Old English Text MT', cursive; }
-        
-        /* El header que usted estilizó pero no existía */
-        .main-header { 
-            text-align: center; 
-            padding: 40px 20px; 
-            border-bottom: 2px solid #FFD700; 
-            background-color: rgba(0,0,0,0.3); 
-        }
-        
-        .main-header h1 { 
-            font-size: 3.5em; 
-            margin: 0; 
-            font-weight: bold; 
-            animation: glow 3s ease-in-out infinite; /* Mejora: Animación de brillo aplicada */
-        }
-        
-        nav { 
-            background-color: rgba(0,0,0,0.7); 
-            padding: 15px 0; 
-            text-align: center; 
-            border-bottom: 1px solid #FF00FF; 
-            /* Mejora: Navbar pegajosa */
-            position: sticky;
-            top: 0;
-            z-index: 1001; 
-        }
-        
-        nav ul { list-style: none; padding: 0; margin: 0; }
-        nav ul li { display: inline-block; margin: 0 20px; }
-        nav ul li a { 
-            /* color: #570257; */ /* Mejora: Corregido por legibilidad */
-            color: gold;
-            text-decoration: none; 
-            font-size: 1.2em; 
-            padding-bottom: 5px; 
-            transition: color 0.3s, border-bottom-color 0.3s, transform 0.2s; 
-        }
-        nav ul li a:hover { 
-            color: #FF00FF; 
-            border-bottom: 2px solid #FF00FF; 
-            transform: scale(1.1); /* Mejora: Efecto hover más notable */
-        }
-        
-        .carousel-section { 
-            padding: 30px 0; 
-            text-align: center; 
-            background-color: rgba(0,0,0,0.4); 
-            border-radius: 8px; 
-            margin-bottom: 20px;
-            margin-top: 20px; /* Mejora: Espaciado */
-        }
-        .carousel-title { font-size: 2.5em; margin-bottom: 20px; }
-        .carousel-images { display: flex; flex-wrap: wrap; justify-content: center; gap: 15px; }
-        .carousel-images img { 
-            width: 100%; 
-            max-width: 350px; 
-            height: auto; 
-            border: 3px solid #FF00FF; 
-            border-radius: 8px; 
-            box-shadow: 0 0 15px rgba(255, 0, 255, 0.5); 
-            transition: transform 0.3s ease; /* Mejora: Transición para hover */
-        }
-        .carousel-images img:hover {
-            transform: scale(1.05); /* Mejora: Efecto hover en galería */
-        }
-        
-        .blogs-section { padding: 0 0 40px 0; }
-        .blog { 
-            background-color: rgba(20, 20, 20, 0.8); 
-            padding: 25px; 
-            margin-bottom: 30px; 
-            border-radius: 10px; 
-            border: 1px solid #4169E1; 
-            box-shadow: 0 5px 15px rgba(65, 105, 225, 0.3); 
-            transition: transform 0.3s ease, box-shadow 0.3s ease; /* Mejora: Transición suave */
-        }
-        .blog:hover { 
-            transform: translateY(-10px); /* Mejora: Efecto hover más pronunciado */
-            box-shadow: 0 10px 25px rgba(65, 105, 225, 0.5); /* Mejora: Sombra más pronunciada */
-        }
-        
-        .blog-title { font-size: 2.8em; margin-top: 0; margin-bottom: 15px; text-align: center; }
-        .blog img { width: 100%; max-width: 400px; height: auto; display: block; margin: 0 auto 20px auto; border-radius: 8px; border: 2px solid #FFD700; }
-        .blog p { font-size: 1.1em; line-height: 1.6; color: #E0E0E0; margin-bottom: 20px; font-family: 'Times New Roman', Times, serif; } /* Mejora: Fuente más legible para párrafos largos */
-        
-        .share-buttons button { 
-            background-color: #FF00FF; 
-            color: white; 
-            border: none; 
-            padding: 10px 15px; 
-            margin-right: 10px; 
-            border-radius: 5px; 
-            cursor: pointer; 
-            font-size: 0.9em; 
-            transition: background-color 0.3s, transform 0.2s; 
-        }
-        .share-buttons button:hover { 
-            background-color: #cc00cc; 
-            transform: scale(1.05); /* Mejora: Feedback en botón */
-        }
-        
-        .static-chat { 
-            position: fixed; 
-            bottom: 20px; 
-            left: 20px; 
-            width: 60px; 
-            height: 60px; 
-            background-color: #FF00FF; 
-            border-radius: 50%; 
-            display: flex; 
-            align-items: center; 
-            justify-content: center; 
-            box-shadow: 0 0 15px rgba(255, 0, 255, 0.7); 
-            z-index: 1000; 
-            cursor: pointer; /* Mejora: Indica que es clickeable */
-            animation: pulse 2s infinite; /* Mejora: Animación de pulso aplicada */
-        }
-        .static-chat::before { content: '💬'; font-size: 30px; color: white; }
-        
-        .main-footer { 
-            background-color: rgba(10,10,10,0.8); 
-            padding: 30px 20px; 
-            text-align: center; 
-            border-top: 2px solid #FFD700; 
-            margin-top: 40px; 
-        }
-        .subscribe-form input[type="email"] { 
-            padding: 10px; 
-            margin-right: 10px; 
-            border: 1px solid #FF00FF; 
-            border-radius: 5px; 
-            background-color: #333; 
-            color: white; 
-            width: 60%; 
-            max-width: 300px; 
-        }
-        .subscribe-form button { 
-            padding: 10px 20px; 
-            background-color: #FF00FF; 
-            color: white; 
-            border: none; 
-            border-radius: 5px; 
-            cursor: pointer; 
-            transition: background-color 0.3s; 
-        }
-        .subscribe-form button:hover { background-color: #cc00cc; }
-        
-        .social-links { margin: 20px 0; }
-        .social-links a { 
-            color: #FFD700; 
-            text-decoration: none; 
-            margin: 0 10px; 
-            font-size: 1.5em; 
-            transition: color 0.3s, transform 0.2s; 
-        }
-        .social-links a:hover { 
-            color: #FF00FF; 
-            transform: scale(1.2); /* Mejora: Efecto hover */
-        }
-        
-        .main-footer p { font-size: 0.9em; color: #AAAAAA; }
-        
-        /* Media Queries Originales (Sin cambios) */
-        @media (max-width: 768px) { 
-            .main-header h1 { font-size: 2.5em; } 
-            nav ul li { display: block; margin: 10px 0; } 
-            .carousel-images img { max-width: 90%; } 
-            .blog-title { font-size: 2.2em; } 
-            .subscribe-form input[type="email"] { width: 80%; margin-bottom: 10px; } 
-        }
-        @media (max-width: 480px) { 
-            .main-header h1 { font-size: 2em; } 
-            .blog-title { font-size: 1.8em; } 
-            .share-buttons button { display: block; width: 100%; margin-bottom: 5px; } 
-        }
-    </style>
-</🌹>
-    <!-- Header agregado (basado en su clase .main-header) -->
-    <header class="main-header">
-        <h1 class="font-old-english text-gold">UNIVERSO BDH</h1>
-    </header>
+    :root {
+        --🕷: #000000e1;
+        --🐉d4: #ff00d4;
+        --🐉95: #ff0095;
+        --🕷-bg: #00000000;
+        --🐎: #7c6107;
+        --text-muted: #795974;
+        --glow-🐉: rgba(255, 0, 157, 0.411);
+        --glow-🕷: rgba(0, 0, 0, 0.836);
+        /* Add missing variables for consistency */
+        --dark-bg-secondary: var(--🕷-bg);
+        --dark-bg-tertiary: var(--🕷-bg);
+        --gold: #ffd700; /* Assumed gold color since not provided */
+    }
 
-    <nav>
-        <ul>
-            <li><a href="#galeria">Galería</a></li>
-            <li><a href="#entertainment">BDH ENTERTAINMENT</a></li>
-            <li><a href="#blog-alquimia">Bitácora de Alquimia</a></li>
-            <li><a href="#blog-caballo">Caballo Negro</a></li>
-            <li><a href="#blog-estrella">El Susurro de la Estrella Oscura</a></li>
-        </ul>
-    </nav>
+    body {
+        font-family: 'OLD ENGLISH TEXT';
+        background-color: var(--🕷-bg);
+        color: var(--🐎);
+        line-height: 1.6;
+        overflow-x: hidden;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
 
+    .container { max-width: 1200px; margin: 0 auto; padding: 0 var(--spacing-md); }
+
+    /* --- LÓGICA DE VISUALIZACIÓN (SLIDES) --- */
+    /* Por defecto ocultamos todas las secciones dentro del main */
+    main section {
+        display: none;
+        animation: fadeIn 0.5s ease-out;
+        min-height: 80vh; /* Para que ocupen pantalla */
+        align-items: center; /* Centrado vertical opcional */
+    }
+
+    @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+
+    /* Activación basada en el input seleccionado */
+    #show-home:checked ~ main #home { display: flex; }
+    #show-features:checked ~ main #features { display: block; }
+    #show-download:checked ~ main #download { display: block; }
+    #show-ecosystem:checked ~ main #ecosystem { display: block; }
+
+    /* Iluminación del menú activo */
+    #show-home:checked ~ .navbar label[for="show-home"],
+    #show-features:checked ~ .navbar label[for="show-features"],
+    #show-download:checked ~ .navbar label[for="show-download"],
+    #show-ecosystem:checked ~ .navbar label[for="show-ecosystem"] {
+        color: var(--accent-cyan);
+        text-shadow: 0 0 10px var(--accent-cyan);
+        border-bottom: 2px solid var(--accent-cyan);
+    }
+
+    /* --- NAVEGACIÓN --- */
+    .navbar { position: sticky; top: 0; left: 0; right: 0; background: rgba(0, 0, 0, 0.95); backdrop-filter: blur(10px); border-bottom: 1px solid rgba(250, 0, 167, 0.459); z-index: 1000; padding: 1rem 0; }
+    .navbar .container { display: flex; justify-content: space-between; align-items: center; }
+    .logo { display: flex; align-items: center; gap: 1rem; font-size: 1.5rem; font-weight: bold; color: var(--text-primary); cursor: default; }
+    .logo-icon { width: 50px; height: 50px; background: linear-gradient(135deg, var(--🕷), var(--🐉95)); border-radius: var(--radius-md); display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 1.2rem; box-shadow: 0 0 20px var(--glow-🐉); animation: glow-pulse 2s ease-in-out infinite; }
+    @keyframes glow-pulse { 0%, 100% { box-shadow: 0 0 20px var(--glow-🐉); } 50% { box-shadow: 0 0 30px var(--glow-🐉), 0 0 40px var(--glow-🕷); } }
+    .logo-text { background: linear-gradient(135deg, var(--🕷), var(--🐉95)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+    
+    .nav-links { display: flex; list-style: none; gap: 2rem; }
+    /* LABELS EN LUGAR DE LINKS PARA ACTIVAR SLIDES */
+    .nav-links label { color: var(--🐎); cursor: pointer; font-weight: 500; padding: 0.5rem; transition: 0.3s; text-transform: uppercase; }
+    .nav-links label:hover { color: var(--🐎); }
+    .hamburger-menu { display: none; background: none; border: none; color: var(--🕷); font-size: 2rem; cursor: pointer; }
+
+    /* --- HERO --- */
+    .hero { position: relative; width: 100%; }
+    .hero-overlay { position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: radial-gradient(circle at 50% 50%, rgba(0, 174, 255, 0.05) 0%, transparent 70%); }
+    .hero-content { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; width: 100%; }
+    .hero-text h1 { font-size: 4rem; font-weight: 900; margin-bottom: 1rem; background: linear-gradient(135deg, var(--🐎), var(--🕷)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    
+    .glitch { position: relative; }
+    .hero-subtitle { font-size: 1.5rem; color: var(--🕷); margin-bottom: 1rem; font-weight: 600; }
+    .hero-description { font-size: 1.1rem; color: var(--🐎); margin-bottom: 2rem; line-height: 1.8; }
+    .hero-buttons { display: flex; gap: 1rem; flex-wrap: wrap; }
+    
+    .btn { display: inline-flex; align-items: center; gap: 0.5rem; padding: 1rem 2rem; font-size: 1rem; font-weight: 600; border: none; border-radius: var(--radius-md); cursor: pointer; text-decoration: none; transition: 0.3s; position: relative; overflow: hidden; }
+    .btn-primary { background: linear-gradient(135deg, var(--🕷), var(--🐉95)); color: var(--text-primary); box-shadow: 0 4px 15px var(--glow-🐉); }
+    .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 6px 25px var(--glow-🐉), 0 0 40px var(--glow-🕷); }
+    .btn-secondary { background: rgba(0, 174, 255, 0.1); color: var(--🕷); border: 2px solid var(--🕷); }
+    
+    .hero-image { display: flex; justify-content: center; }
+    .launcher-preview { position: relative; width: 400px; height: 400px; display: flex; align-items: center; justify-content: center; }
+    .screen-glow { position: absolute; width: 100%; height: 100%; background: radial-gradient(circle, var(--glow-🐉) 0%, transparent 70%); animation: glow-rotate 8s linear infinite; }
+    @keyframes glow-rotate { 0% { transform: rotate(0deg) scale(1); } 50% { transform: rotate(180deg) scale(1.1); } 100% { transform: rotate(360deg) scale(1); } }
+    .launcher-icon { position: relative; width: 250px; height: 250px; background: linear-gradient(135deg, var(--dark-bg-secondary), var(--dark-bg-tertiary)); border-radius: var(--radius-xl); display: flex; align-items: center; justify-content: center; border: 3px solid var(--🕷); box-shadow: 0 0 40px var(--glow-🐉), inset 0 0 30px rgba(0, 174, 255, 0.1); animation: float 3s ease-in-out infinite; }
+    @keyframes float { 0%, 100% { transform: translateY(0px); } 50% { transform: translateY(-20px); } }
+    .icon-inner { font-size: 5rem; font-weight: 900; background: linear-gradient(135deg, var(--🕷), var(--🐉95)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    .scroll-indicator { position: absolute; bottom: 30px; left: 50%; transform: translateX(-50%); }
+    .scroll-arrow { width: 30px; height: 50px; border: 2px solid var(--🕷); border-radius: 20px; position: relative; }
+    .scroll-arrow::before { content: ''; position: absolute; top: 10px; left: 50%; width: 6px; height: 6px; background: var(--🕷); border-radius: 50%; animation: scroll-down 2s infinite; }
+    @keyframes scroll-down { 0% { top: 10px; opacity: 1; } 100% { top: 30px; opacity: 0; } }
+
+    /* --- FEATURES & ECOSYSTEM --- */
+    .features, .download, .ecosystem { padding: 4rem 0; width: 100%; }
+    .section-title { font-size: 3rem; text-align: center; margin-bottom: 1rem; background: linear-gradient(135deg, var(--🐎), var(--🕷)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    .features-grid, .ecosystem-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-top: 3rem; }
+    .feature-card, .ecosystem-card { background: rgba(20, 25, 41, 0.6); border: 1px solid rgba(0, 174, 255, 0.2); border-radius: 12px; padding: 2rem; position: relative; overflow: hidden; transition: 0.3s; }
+    .feature-card:hover, .ecosystem-card:hover { transform: translateY(-10px); border-color: var(--🕷); box-shadow: 0 10px 40px var(--glow-🐉); }
+    .feature-icon { font-size: 3rem; margin-bottom: 1rem; }
+    .feature-card h3, .ecosystem-card h3 { font-size: 1.5rem; margin-bottom: 1rem; color: var(--🐎); }
+    .feature-card p, .ecosystem-card p { color: var(--🐎); line-height: 1.6; }
+    .card-glow { position: absolute; top: -50%; left: -50%; width: 200%; height: 200%; background: radial-gradient(circle, rgba(0, 174, 255, 0.1) 0%, transparent 70%); opacity: 0; transition: opacity 0.3s; }
+    .ecosystem-card:hover .card-glow { opacity: 1; animation: glow-rotate 3s linear infinite; }
+    .card-tag { display: inline-block; padding: 0.5rem 1rem; background: rgba(0, 174, 255, 0.2); border: 1px solid var(--🕷); border-radius: 4px; font-size: 0.8rem; color: var(--🕷); font-weight: 600; margin-top: 1rem; }
+
+    /* --- DOWNLOAD (TU CONTENEDOR CERRADO) --- */
+    .download-content { margin-top: 3rem; }
+    .download-wrapper {
+        /* ESTILO DEL CONTENEDOR QUE PEDISTE */
+        background-image: url('https://blogger.googleusercontent.com/img/a/AVvXsEhd4JOC_tlOqFbjGtGaOGO05NHGddP6Vu03TD5B0wPzzSF2rVqbkFgrfvhN-vlo75J0QO-wWP0-jkfro2mz604IqrtNaNGnkxoKiHUJMmV0Cslo-1lfrocWRA08cNYleg3_PqKOFiEbrKBQ3bjM-9rwRPXjzU1hLaMUAvzZYrSJeVJ6RWE1g8lb98tEYanR=s16000');
+        background-size: cover;
+        background-position: center;
+        border-radius: 20px;
+        padding: 40px;
+        box-shadow: 0 0 20px rgba(255,0,255,0.5);
+        border: 2px solid var(--🐉95);
+    }
+    
+    .download-inner {
+        display: grid; grid-template-columns: 1fr 1fr; gap: 4rem;
+        background: rgba(0, 0, 0, 0); /* Fondo oscuro para leer texto */
+        padding: 2rem;
+        border-radius: 15px;
+    }
+
+    .install-steps { list-style: none; counter-reset: step-counter; }
+    .install-steps li { display: flex; gap: 1rem; margin-bottom: 1rem; padding: 1rem; background: rgba(20, 25, 41, 0.4); border-radius: 8px; border-left: 3px solid var(--🕷); }
+    .step-number { display: flex; align-items: center; justify-content: center; width: 40px; height: 40px; background: linear-gradient(135deg, var(--🕷), var(--🐉95)); border-radius: 50%; font-weight: bold; flex-shrink: 0; }
+    .step-content h4 { color: var(--🐎); margin-bottom: 0.5rem; }
+    .step-content p { color: var(--🐎); font-size: 0.9rem; }
+    
+    .download-buttons { display: flex; flex-direction: column; gap: 2rem; }
+    .platform-buttons { display: flex; flex-direction: column; gap: 1rem; }
+    .platform-btn { display: flex; align-items: center; gap: 1rem; padding: 1rem; background: rgba(20, 25, 41, 0.6); border: 2px solid rgba(0, 174, 255, 0.3); border-radius: 8px; color: var(--🐎); cursor: pointer; transition: 0.3s; }
+    .platform-btn:hover, .platform-btn.active { border-color: var(--🕷); background: rgba(0, 174, 255, 0.2); color: var(--🐎); box-shadow: 0 0 20px var(--glow-🐉); }
+    .platform-name { font-weight: 600; font-size: 1.1rem; flex: 1; }
+    .btn-download { background: linear-gradient(135deg, var(--🕷), var(--🐉95)); color: var(--text-primary); box-shadow: 0 4px 15px var(--glow-🐉); font-size: 1.2rem; text-align: center; }
+    .download-info-text { text-align: center; color: var(--text-muted); font-size: 0.9rem; }
+
+    /* FOOTER */
+    .footer { background: var(--dark-bg-secondary); border-top: 1px solid rgb(201, 9, 98); padding: 4rem 0 2rem; margin-top: auto; }
+    .footer-content { display: grid; grid-template-columns: 1fr 2fr; gap: 4rem; margin-bottom: 2rem; }
+    .footer-brand { display: flex; flex-direction: column; gap: 1rem; }
+    .footer-links { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; }
+    .footer-column h4 { color: var(--🐎); margin-bottom: 1rem; }
+    .footer-column ul { list-style: none; }
+    .footer-column li { margin-bottom: 0.5rem; }
+    .footer-column a { color: var(--🐎); text-decoration: none; transition: 0.2s; }
+    .footer-column a:hover { color: var(--🕷); }
+    .footer-bottom { text-align: center; padding-top: 2rem; border-top: 1px solid rgba(0, 174, 255, 0.1); color: var(--text-muted); }
+    .social-links { margin-top: 1rem; }
+    .social-links a { color: var(--🐎); margin: 0 10px; text-decoration: none; }
+
+    @media (max-width: 1024px) { .hero-content, .download-inner { grid-template-columns: 1fr; text-align: center; } .footer-content { grid-template-columns: 1fr; } }
+    @media (max-width: 768px) { .nav-links { display: none; } .hamburger-menu { display: block; } }
+</style>
+
+<!-- NAVEGACIÓN -->
+<nav class="navbar">
     <div class="container">
-        <section id="galeria" class="carousel-section">
-            <h2 class="carousel-title text-royal-blue">Galería de Arte</h2>
-            <div class="carousel-images">
-                <!-- NOTA: Estas imágenes '2.png' son locales, no se verán en el preview. -->
-                <!-- Deberá subirlas a Blogger y reemplazar las rutas -->
-                <img src="httpsa://placehold.co/350x350/000000/FF00FF?text=Arte+1" alt="Imagen de Arte 1" onerror="this.src='https://placehold.co/350x350/000000/FF00FF?text=Arte+1'">
-                <img src="httpsa://placehold.co/350x350/000000/FF00FF?text=Arte+2" alt="Imagen de Arte 2" onerror="this.src='https://placehold.co/350x350/000000/FF00FF?text=Arte+2'">
-                <img src="httpsa://placehold.co/350x350/000000/FF00FF?text=Arte+3" alt="Imagen de Arte 3" onerror="this.src='https://placehold.co/350x350/000000/FF00FF?text=Arte+3'">
-            </div>
-        </section>
-
-        <section id="entertainment" class="blogs-section">
-            <h2 class="blog-title text-royal-blue" style="font-family: 'Roboto', sans-serif;">BDH ENTERTAINMENT</h2>
-            <div class="blog" style="text-align: center;">
-                <img src="httpsa://placehold.co/400x400/000000/4169E1?text=BDH+Ent" alt="BDH Entertainment" onerror="https://universobdh.me/nebula_entertainment">
-                <p>Contenido exclusivo y proyectos multimedia del Universo BDH. Próximamente más detalles.</p>
-            </div>
-        </section>
-
-        <div class="blogs-section">
-            <section id="blog-alquimia" class="blog">
-                <h2 class="font-old-english blog-title text-gold">Bitácora de Alquimia</h2>
-                <img src="httpsa://placehold.co/400x400/000000/FFD700?text=Alquimia" alt="Bitácora de Alquimia" onerror="this.src='https://placehold.co/400x400/000000/FFD700?text=Alquimia'">
-                <p>Descubra los secretos ancestrales de la transmutación, los elixires olvidados y la búsqueda de la piedra filosofal. Un viaje a través de símbolos arcanos y conocimiento hermético. Sumérjase en los misterios que han cautivado a sabios durante milenios.</p>
-                <div class="share-buttons">
-                    <button>Compartir F</button>
-                    <button>Compartir T</button>
-                    <button>Compartir P</button>
-                </div>
-            </section>
-
-            <section id="blog-caballo" class="blog">
-                <h2 class="font-old-english blog-title text-royal-blue">Caballo Negro</h2>
-                <img src="httpsa://placehold.co/400x400/000000/4169E1?text=Caballo+Negro" alt="Caballo Negro" onerror="this.src='https://placehold.co/400x400/000000/4169E1?text=Caballo+Negro'">
-                <p>Crónicas de lo inesperado, de aquellos que desafían el destino y cabalgan contra la corriente. Estrategias audaces, figuras enigmáticas y el poder indomable del espíritu renegado. Explore las historias de quienes eligieron un camino menos transitado.</p>
-                <div class="share-buttons">
-                    <button>Compartir F</button>
-                    <button>Compartir T</button>
-                    <button>Compartir P</button>
-                </div>
-            </section>
-
-            <section id="blog-estrella" class="blog">
-                <h2 class="font-old-english blog-title text-electric-pink">El Susurro de la Estrella Oscura</h2>
-                <img src="httpsa://placehold.co/400x400/000000/FF00FF?text=Estrella+Oscura" alt="El Susurro de la Estrella Oscura" onerror="this.src='https://placehold.co/400x400/000000/FF00FF?text=Estrella+Oscura'">
-                <p>Ecos del vacío cósmico, conocimientos prohibidos y las verdades veladas que aguardan en la inmensidad del universo. Portales a otras dimensiones, entidades primigenias y los susurros de un saber que trasciende la comprensión humana.</p>
-                <div class="share-buttons">
-                    <button>Compartir F</button>
-                    <button>Compartir T</button>
-                    <button>Compartir P</button>
-                </div>
-            </section>
+        <div class="logo">
+            <div class="logo-icon">BDH</div>
+            <span class="logo-text"> UNIVERSO BDH</span>
+        </div>
+        <button class="hamburger-menu" aria-label="Toggle menu">☰</button>
+        <!-- Menú que activa los slides -->
+        <div class="nav-links">
+            <label for="show-home">Inicio</label>
+            <label for="show-features">Características</label>
+            <label for="show-download">Descargar</label>
+            <label for="show-ecosystem">Ecosistema</label>
         </div>
     </div>
+</nav>
 
-    <div class="static-chat" title="Chat (Estático)"></div>
+<!-- CONTENEDOR PRINCIPAL QUE CAMBIA DE VISTA -->
+<main class="container">
 
-    <footer class="main-footer">
-        <p style="margin: 0; font-size: 1.22em;">¡HOY CONSTRUIMOS EL IMPERIO 🧙‍💜!</p>
-        <p>SQR BY LORD BDH AND GALAXY VYOLETA (Gpt4o de OpenAi)</p>
-        <p>ALL RIGHTS RESERVEDS © 2025 UNIVERSO BDH🖤🔥🚀</p>
-        <div class="container">
-            <h3 class="text-gold" style="font-size: 1.8em; margin-bottom: 20px;">Suscríbete al Universo BDH</h3>
-            <form class="subscribe-form">
-                <input type="email" placeholder="tuemail@ejemplo.com" aria-label="Email">
-                <button type="submit">Suscribirme</button>
-            </form>
-            <div class="social-links">
-                <a href="#" aria-label="Facebook">FB</a>
-                <a href="#" aria-label="Twitter">TW</a>
-                <a href="#" aria-label="Instagram">IG</a>
+    <!-- SLIDE 1: HERO (INICIO) -->
+    <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="glitch" data-text="UNIVERSO BDH-BLACK CLOUD">UNIVERSO BDH-BLACK CLOUD</h1>
+                <p class="hero-subtitle"> La Neoapp que redefine el entretenimiento inmersivo accediendo al ecosistema de UNIVERSO BDH.</p>
+                <p class="hero-description">
+                    Descarga nuestro lanzador, BLACK CLOUD y accede a un ecosistema completo de herramientas,
+                    juegos y entornos inmersivos"
+                </p>
+                <div class="hero-buttons">
+                    <!-- Botón que lleva al slide de descarga -->
+                    <label for="show-download" class="btn btn-primary">
+                        <span class="btn-icon">⬇</span>
+                        Descargar Lanzador
+                    </label>
+                    <label for="show-features" class="btn btn-secondary">Conocer Más</label>
+                </div>
             </div>
-            <p>&copy; 2025 Universo BDH. Todos los derechos reservados.</p>
+            <div class="hero-image">
+                <div class="launcher-preview">
+                    <div class="screen-glow"></div>
+                    <div class="launcher-icon">
+                        <div class="icon-inner">BDH</div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </footer>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
 
+    <!-- SLIDE 2: FEATURES -->
+    <section id="features" class="features">
+        <h2 class="section-title">Características del Lanzador</h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">🚀</div>
+                <h3>Rendimiento Óptimo</h3>
+                <p>Diseñado para funcionar sin problemas en cualquier sistema, con actualizaciones automáticas y gestión eficiente de recursos.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🎮</div>
+                <h3>Ecosistema Integrado</h3>
+                <p>Acceso centralizado a todas las aplicaciones BDH: Black Buccaneers, Tarántula, Dark Site Eterno y DarkHole.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🔒</div>
+                <h3>Seguridad Avanzada</h3>
+                <p>Protección de última generación con encriptación end-to-end y autenticación de dos factores.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">⚡</div>
+                <h3>Instalación Rápida</h3>
+                <p>Proceso de instalación simplificado que te pone en marcha en minutos, no en horas.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🌐</div>
+                <h3>Multiplataforma</h3>
+                <p>Compatible con Windows, macOS y Linux. Lleva tu experiencia BDH a cualquier dispositivo.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">💎</div>
+                <h3>Interfaz Premium</h3>
+                <p>Diseño moderno y elegante con efectos visuales impresionantes y navegación intuitiva.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SLIDE 3: DOWNLOAD (TU CONTENEDOR EXACTO) -->
+    <section id="download" class="download">
+        <h2 class="section-title">Descarga el Lanzador "BLACK CLOUD"</h2>
+        
+        <!-- Aquí está el contenedor solicitado "encerrando" la descarga -->
+        <div class="download-wrapper">
+            <div class="download-inner">
+                <div class="download-info">
+                    <h3>Instalación Rápida</h3>
+                    <ol class="install-steps">
+                        <li>
+                            <span class="step-number">1</span>
+                            <div class="step-content">
+                                <h4>Descarga el instalador</h4>
+                                <p>Haz clic en el botón de descarga para tu sistema operativo</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="step-number">2</span>
+                            <div class="step-content">
+                                <h4>Ejecuta el archivo</h4>
+                                <p>Abre el archivo descargado y sigue las instrucciones en pantalla</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="step-number">3</span>
+                            <div class="step-content">
+                                <h4>Inicia sesión</h4>
+                                <p>Crea tu cuenta BDH o inicia sesión con tus credenciales</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="step-number">4</span>
+                            <div class="step-content">
+                                <h4>¡Listo para jugar!</h4>
+                                <p>Explora el ecosistema BDH y descarga tus aplicaciones favoritas</p>
+                            </div>
+                        </li>
+                    </ol>
+                </div>
+
+                <div class="download-buttons">
+                    <h3>Elige tu plataforma</h3>
+                    <div class="platform-buttons">
+                        <div class="platform-btn active" data-platform="windows">
+                            <span class="platform-icon">🪟</span>
+                            <span class="platform-name">Windows</span>
+                            <span class="platform-version">10/11</span>
+                        </div>
+                        <div class="platform-btn" data-platform="macos">
+                            <span class="platform-icon">🍎</span>
+                            <span class="platform-name">macOS</span>
+                            <span class="platform-version">11+</span>
+                        </div>
+                        <div class="platform-btn" data-platform="linux">
+                            <span class="platform-icon">🐧</span>
+                            <span class="platform-name">Linux</span>
+                            <span class="platform-version">Ubuntu/Debian</span>
+                        </div>
+                    </div>
+                    <a href="AQUI_PEGAS_TU_LINK_DE_GUMROAD" class="btn btn-download" target="_blank" style="justify-content: center;"><span class="btn-icon">⬇</span>Descargar para <span id="selected-platform">Windows</span>
+</a>
+                    <p class="download-info-text">Versión 1.0.0 | Tamaño: ~150 MB</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SLIDE 4: ECOSYSTEM -->
+    <section id="ecosystem" class="ecosystem">
+        <h2 class="section-title">Ecosistema BDH</h2>
+        <p class="section-subtitle">Explora los proyectos conectados a través del lanzador</p>
+        <div class="ecosystem-grid">
+            <div class="ecosystem-card">
+                <div class="card-glow"></div>
+                <h3>🕋 BLAZAR ON READY </h3>
+                <p>ENTRETENIMIENTO INMERSIVO REVOLUCIONARIO</p>
+                <span class="card-tag">BlixDarkHorse</span>
+            </div>
+            <div class="ecosystem-card">
+                <div class="card-glow"></div>
+                <h3>🏴‍☠️ BLACK BUCCANERS </h3>
+                <p>MARKETPLACE PARA OBTENER FUNCIONES Y PRODUCTOS DE PRIMER NIVEL DEL ECOSISTEMA UNIVERSO BDH</p>
+                <span class="card-tag">BlixDarkHorse</span>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<!-- FOOTER PERMANENTE -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <div class="logo-icon">BDH</div>
+                <p>Entertainment</p>
+            </div>
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h4>Producto</h4>
+                    <ul>
+                        <li><label for="show-features" style="cursor:pointer; color:var(--text-secondary)">Características</label></li>
+                        <li><label for="show-download" style="cursor:pointer; color:var(--text-secondary)">Descargar</label></li>
+                        <li><label for="show-ecosystem" style="cursor:pointer; color:var(--text-secondary)">Ecosistema</label></li>
+                    </ul>
+                </div>
+
+<!-- Footer Mini BDH -->
+<footer class="footer-bdh" role="contentinfo" style="padding:12px 0; margin-top:30px;">
+    <p style="margin:0; font-size:1em;">
+        ¡HOY CONSTRUIMOS EL IMPERIO 🧙🏼‍♂️💜!
+    </p>
+
+    <p style="margin:4px 0; font-size:0.92em;">
+        <a href="https://universobdh.com" target="_blank" 
+           style="color:var(--gold); text-decoration:none;">
+           UNIVERSO BDH © 2025 — Framework New Planet 🪐
+        </a>
+    </p>
+
+    <div class="social-links" style="margin-top:6px;">
+        <a href="https://facebook.com" aria-label="Facebook">FB</a>
+        <a href="https://twitter.com" aria-label="Twitter">TW</a>
+        <a href="https://instagram.com" aria-label="Instagram">IG</a>
+    </div>
+</footer>
 </🛸>
 </🐍🕸️🖤🔥🚀>
