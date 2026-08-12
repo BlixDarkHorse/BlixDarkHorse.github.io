@@ -1,0 +1,1 @@
+window.BDH_CONFIG={oauth:{gms:"https://id.universobdh.me/oauth/authorize?provider=gms",google:"https://id.universobdh.me/oauth/authorize?provider=google",microsoft:"https://id.universobdh.me/oauth/authorize?provider=microsoft"},account:{login:"https://id.universobdh.me/login",register:"https://id.universobdh.me/register"}};
